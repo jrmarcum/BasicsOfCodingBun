@@ -1,0 +1,21 @@
+BasicsOfCodingJavaScript
+Author: Jon Marcum
+
+This project is a JavaScript port of lesson content originally created by
+Mark McGranaghan as part of the Go by Example project:
+  https://github.com/mmcgrana/gobyexample
+
+The Go by Example content is licensed under the Creative Commons Attribution
+3.0 Unported License:
+  http://creativecommons.org/licenses/by/3.0/
+
+Lesson content in this repository (source code and Markdown files) has been
+adapted from Go by Example for comparative programming language study,
+examining syntax, language simplicity, lines of code, and compile/run
+performance across multiple languages. The Go reference implementation used
+as the basis for this port is:
+  https://github.com/jrmarcum/BasicsOfCodingGo
+
+The original project structure, root files, and any additions not derived
+from Go by Example are dedicated to the public domain under the Creative
+Commons CC0 1.0 Universal license. See LICENSE for details.
