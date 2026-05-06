@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"d:\\\\Programs\\\\_ProgramExamples\\\\Example_Programs\\\\GithubProjects\\\\BasicsOfCodingBun\\\\upstream\\\\basicsofcodinggo\" -Directory | Where-Object { $_.Name -match '^\\\\d{2}_' } | Select-Object -ExpandProperty Name | Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\Programs\\\\_ProgramExamples\\\\Example_Programs\\\\GithubProjects\\\\BasicsOfCodingNode\" -Directory | Where-Object { $_.Name -match '^\\\\d{2}_' } | Select-Object -ExpandProperty Name | Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\Programs\\\\_ProgramExamples\\\\Example_Programs\\\\GithubProjects\\\\BasicsOfCodingBun\" -Directory | Where-Object { $_.Name -match '^\\\\d{2}_' } | Select-Object -ExpandProperty Name | Sort-Object)"
+    ]
+  }
+}

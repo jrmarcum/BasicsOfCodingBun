@@ -85,13 +85,15 @@ Thumbs.db
 - **Runtime:** Bun only. No Node.js, npm, or ts-node required.
   - JavaScript: `bun filename.js`
   - TypeScript: `bun filename.ts` (Bun runs TypeScript natively; no tsconfig needed)
-- **Module system:** CommonJS (`require`) in both `.js` and `.ts` files.
-  No `import`/`export` unless unavoidable.
+  - Testing (lesson 68): `bun test ./filename.js` and `bun test ./filename.ts`
+- **Module system:** ESM (`import`/`export`) in both `.js` and `.ts` files.
+  Built-in modules use the `node:` prefix (e.g., `import fs from 'node:fs'`,
+  `import { createHash } from 'node:crypto'`).
 - **No root package.json or tsconfig.json** — Bun runs TypeScript natively
   with no external toolchain. Do not create these files.
-- **Bun is a drop-in Node.js replacement** — all CommonJS `require()` calls,
-  `process.*` globals, `fs`/`path`/`crypto`/`readline` modules, and all lesson
-  logic work unchanged from the Node.js implementation.
+- **Bun is a drop-in Node.js replacement** — all ESM `import` statements,
+  `process.*` globals, `node:fs`/`node:path`/`node:crypto`/`node:readline`
+  modules, and all lesson logic work with Bun.
 - **TypeScript conventions used:**
   - Function parameter and return types always explicit
   - `interface` for object shapes (structs, result objects)
@@ -99,7 +101,7 @@ Thumbs.db
   - `Array<() => void>` for typed function arrays (lesson 43)
   - `unknown` for truly-unknown-type parameters (lesson 07 `whatAmI`)
   - `implements InterfaceName` on classes (lesson 20)
-  - `require('xml2js') as any` for the untyped xml2js package (lesson 49)
+  - `import xml2js from 'xml2js'` for the xml2js package (lesson 49)
 - **No external packages** except lesson 49 (xml), which requires
   `bun install xml2js` run inside `49_xml/`.
 - **JavaScript has no pointers** (lesson 17) — implement with object references;
@@ -109,16 +111,32 @@ Thumbs.db
 - **JavaScript has no panic/recover** (lesson 42) — implement with `throw`/`try/catch`.
 - **JavaScript has no explicit interfaces** (lesson 20) — implement with duck typing.
 - **JavaScript has no structs** (lesson 18) — implement with classes or plain objects.
+- **JavaScript has no goroutines** (lesson 27) — simulated with `setTimeout(fn, 0)`
+  to defer work to the next event-loop iteration; output order is deterministic.
+- **JavaScript has no channels** (lesson 28) — simulated with a custom `Channel`
+  class using a queue and promise-based send/receive.
+- **JavaScript has no select** (lesson 29) — simulated with `Promise.race`.
+- **JavaScript has no goroutine-level mutexes** (lesson 33) — JavaScript is
+  single-threaded so data races cannot occur; mutex semantics are simulated with
+  a simple async lock class for structural equivalence.
 - **Go's `fmt.Println` vs `console.log`:** Go uses space-separated `%v` format for
   structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Bun/JS uses its own inspection
   format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Always show actual Bun output
   in the `.md` file.
 - **Map iteration order:** Go maps are non-deterministic. JavaScript plain objects
   and `Map` preserve insertion order. No variability note needed for JS maps.
+- **Go's `testing` package** (lesson 68) maps to Bun's native `bun:test` runner;
+  `test()` replaces `func TestX(t *testing.T)`, `describe()` groups subtests,
+  `expect().toBe()` replaces `t.Errorf`. Run with `bun test ./filename.js`.
 - **Variable output lessons** (description at top notes this): 07 (switch — time),
-  42 (panic — stack trace), 50 (time), 51 (epoch), 52 (time-formatting-parsing),
-  53 (random-numbers), 63 (temporary-files-and-directories),
-  67 (environment-variables).
+  27 (goroutines — event-loop scheduling), 29 (select — race timing),
+  30 (timeouts), 31 (timers), 32 (tickers), 37 (rate-limiting),
+  39 (logging — timestamps), 42 (panic — stack trace), 50 (time), 51 (epoch),
+  52 (time-formatting-parsing), 53 (random-numbers),
+  63 (temporary-files-and-directories), 67 (environment-variables),
+  69 (http-client — network response), 70 (http-server — headers),
+  72 (tcp-server), 74 (execing-processes), 75 (spawning-processes),
+  76 (signals).
 - **Lessons with setup steps:** 49 (xml — `bun install xml2js`),
   58 (reading-files — run 59 first), 60 (line-filters — requires stdin piping).
 - The root `LICENSE` file is CC0 but does **not** cover the derived content.
@@ -148,4 +166,6 @@ Rules:
 - No opening `___` before a description; `___` separates description from run command.
 - If there is no description, the file starts directly with `##### Run Command:`.
 - Multiple run command sections are separated by a blank line, `___`, and a blank line.
+- Lesson 68 uses `bun test ./filename.js` and `bun test ./filename.ts` instead of
+  the standard `bun filename.js` / `bun filename.ts`.
 - No per-file attribution footer — attribution is fully satisfied by README and NOTICE.
