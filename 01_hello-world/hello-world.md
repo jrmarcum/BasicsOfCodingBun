@@ -1,8 +1,8 @@
-##### Run Command:
+﻿##### Run Command:
 
-`$ node hello-world.js`
+`$ bun hello-world.js`
 
-`$ npx ts-node hello-world.ts`
+`$ bun hello-world.ts`
 
 ##### Results:
 

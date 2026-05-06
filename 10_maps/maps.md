@@ -1,10 +1,10 @@
-#### JavaScript plain objects are used here as the key-value map equivalent. Unlike Go maps, JavaScript object keys preserve insertion order. Accessing a missing key returns `undefined`; the program uses a conditional to return `0` to match Go's zero-value behavior.
+﻿#### JavaScript plain objects are used here as the key-value map equivalent. Unlike Go maps, JavaScript object keys preserve insertion order. Accessing a missing key returns `undefined`; the program uses a conditional to return `0` to match Go's zero-value behavior.
 ___
 ##### Run Command:
 
-`$ node maps.js`
+`$ bun maps.js`
 
-`$ npx ts-node maps.ts`
+`$ bun maps.ts`
 
 ##### Results:
 

@@ -1,8 +1,8 @@
-##### Run Command:
+﻿##### Run Command:
 
-`$ node regular-expressions.js`
+`$ bun regular-expressions.js`
 
-`$ npx ts-node regular-expressions.ts`
+`$ bun regular-expressions.ts`
 
 ##### Results:
 

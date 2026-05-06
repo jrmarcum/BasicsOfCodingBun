@@ -1,10 +1,10 @@
-#### The last line (`an error`) is written to stderr, not stdout. JavaScript uses template literals for string interpolation, `padStart`/`padEnd` for width formatting, `toFixed` for float precision, `toString(base)` for base conversions, and `util.inspect` for object representation. Unlike Go's `%T`, `typeof` returns generic type categories (`"object"`, `"number"`) rather than package-qualified type names.
+﻿#### The last line (`an error`) is written to stderr, not stdout. JavaScript uses template literals for string interpolation, `padStart`/`padEnd` for width formatting, `toFixed` for float precision, `toString(base)` for base conversions, and `util.inspect` for object representation. Unlike Go's `%T`, `typeof` returns generic type categories (`"object"`, `"number"`) rather than package-qualified type names.
 ___
 ##### Run Command:
 
-`$ node string-formatting.js`
+`$ bun string-formatting.js`
 
-`$ npx ts-node string-formatting.ts`
+`$ bun string-formatting.ts`
 
 ##### Results:
 

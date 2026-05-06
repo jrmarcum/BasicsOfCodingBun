@@ -1,10 +1,10 @@
-#### JavaScript's `const` declares an immutable binding, but unlike Go's untyped constants, JavaScript values are dynamically typed. JavaScript uses full decimal notation for 6e+11 (600000000000) while Go's `fmt.Println` uses scientific notation (6e+11).
+﻿#### JavaScript's `const` declares an immutable binding, but unlike Go's untyped constants, JavaScript values are dynamically typed. JavaScript uses full decimal notation for 6e+11 (600000000000) while Go's `fmt.Println` uses scientific notation (6e+11).
 ___
 ##### Run Command:
 
-`$ node constants.js`
+`$ bun constants.js`
 
-`$ npx ts-node constants.ts`
+`$ bun constants.ts`
 
 ##### Results:
 

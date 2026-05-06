@@ -1,8 +1,8 @@
-##### Run Command:
+﻿##### Run Command:
 
-`$ node for.js`
+`$ bun for.js`
 
-`$ npx ts-node for.ts`
+`$ bun for.ts`
 
 ##### Results:
 

@@ -1,10 +1,10 @@
-#### The day-of-week and time-of-day lines will vary with each run. JavaScript's `typeof` operator returns `"number"` for all numbers (both integers and floats), unlike Go's type switch which distinguishes `int` from `float64`.
+﻿#### The day-of-week and time-of-day lines will vary with each run. JavaScript's `typeof` operator returns `"number"` for all numbers (both integers and floats), unlike Go's type switch which distinguishes `int` from `float64`.
 ___
 ##### Run Command:
 
-`$ node switch.js`
+`$ bun switch.js`
 
-`$ npx ts-node switch.ts`
+`$ bun switch.ts`
 
 ##### Results:
 
