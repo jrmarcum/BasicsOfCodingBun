@@ -1,27 +1,44 @@
-# Basics of Coding Node JavaScript/Typescript
+# Basics of Coding Node
+## Preface
+What this text is and what it is not: This text is intended to introduce the reader to the basics of the JavaScript programming language (running on Node.js) in the sense that they will be able to write minimal types of programs and run the code. It is not intended to go into advanced topics like asynchronous programming, frameworks, bundlers, or advanced software engineering principles.
 
-A JavaScript port of the [Go by Example](https://github.com/mmcgrana/gobyexample) curriculum, used as part of a multi-language comparative study examining syntax, language simplicity, lines of code, and runtime performance for the same set of example programs.
-
-## Prerequisites
-
-Install [Node.js](https://nodejs.org/) (v18 or later recommended). Verify your installation:
-
-```sh
-$ node --version
-v22.0.0
+The programs are intended to be run in the terminal as that is common to most operating systems. Linux and Mac come preinstalled with a terminal. Windows may or may not have it pre-installed. "Windows Terminal" can be installed from the Microsoft store. Just do a search for it and install it.
+## Installation and Setup of Node.js
+To set up Node.js, navigate to the [Node.js](https://nodejs.org/) website and follow the installation instructions for your operating system. A package manager makes the install process much easier (brew for Mac, chocolatey for Windows, and varies based on Linux distribution). If the language has been installed properly you will be able to type the following command in the terminal command line and receive the response shown:
 ```
+$ node --version
+v22.x.x
+(Note: the version shown here varies with your installed version)
+```
+## How to Run Examples
 
-## How to Run the Programs
+Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) source file, plus a `.md` file showing run commands and expected output.
 
-Each lesson lives in its own numbered folder. Navigate into the lesson folder and run the `.js` file with `node`:
+### JavaScript
 
-```sh
+No setup required. Navigate into the lesson folder and run with `node`:
+
+```
 $ cd 01_hello-world
 $ node hello-world.js
-hello world
 ```
 
-Every lesson folder contains a `.md` file with the exact run command and expected output for that lesson.
+### TypeScript
+
+Install the TypeScript toolchain once from the repository root (requires Node.js):
+
+```
+$ npm install
+```
+
+Then run any lesson's TypeScript file with `ts-node`:
+
+```
+$ cd 01_hello-world
+$ npx ts-node hello-world.ts
+```
+
+Both produce identical output.
 
 ## Lessons
 
@@ -79,16 +96,25 @@ Every lesson folder contains a `.md` file with the exact run command and expecte
 
 ## Attribution
 
-Lesson content is adapted from **Go by Example** by Mark McGranaghan
-([https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample))
-and is used under the Creative Commons Attribution 3.0 Unported License.
+This project is adapted in part from **[Basics of Coding Go](https://github.com/jrmarcum/BasicsOfCodingGo)**
+by [Jon Marcum](https://github.com/jrmarcum), which was itself adapted from
+**[Go by Example](https://github.com/mmcgrana/gobyexample)**
+by [Mark McGranaghan](https://github.com/mmcgrana), both licensed under the
+[Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
-The Go reference implementation used as the basis for this port:
-[https://github.com/jrmarcum/BasicsOfCodingGo](https://github.com/jrmarcum/BasicsOfCodingGo)
+The lesson files and code examples derived from those works retain their
+CC BY 3.0 license. This project exists as a platform for multi-language
+comparative study of syntax, language simplicity, lines of code required,
+and runtime performance.
 
 ## License
 
+This repository contains two tiers of content:
+
 | Content | License |
-|---------|---------|
-| Lesson source code and Markdown files (derived from Go by Example) | [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) |
-| Original project structure, root files, and additions | [CC0 1.0 Universal](LICENSE) |
+| --- | --- |
+| Lesson files and code examples adapted from *Basics of Coding Go* / *Go by Example* | [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) — see NOTICE |
+| Original contributions by Jon Marcum (project structure, README, comparative study additions) | [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — see LICENSE |
+
+The root `LICENSE` file (CC0) applies to Jon Marcum's original contributions.
+The `NOTICE` file clarifies that CC BY 3.0 governs all content adapted from *Go by Example* and *Basics of Coding Go*.

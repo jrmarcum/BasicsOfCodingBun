@@ -1,186 +1,61 @@
-# CLAUDE.md — BasicsOfCodingJavaScript
+# Basics of Coding Node — Project Context
 
-## Project Purpose
+## Purpose
 
-This is a JavaScript port of the [Go by Example](https://github.com/mmcgrana/gobyexample)
-curriculum, created as part of a multi-language comparative study. The same set of programs
-is implemented in multiple languages (Go, JavaScript, Python, Rust, etc.) so that readers
-can compare syntax, language simplicity, lines of code, and runtime performance side by side.
+Multi-language comparative study of programming syntax, language simplicity,
+lines of code required, and runtime performance. Node.js is one of several
+languages implemented against the same set of example programs, enabling
+direct side-by-side comparison.
 
-**Go reference implementation:** https://github.com/jrmarcum/BasicsOfCodingGo
+## Licensing Summary
 
-**Runtime:** Node.js (`node filename.js`). No build step required for any lesson.
+This project contains two tiers of content with different licenses:
 
-## Licensing (Two-Tier)
+- **CC BY 3.0** — lesson files and code examples adapted from
+  "Basics of Coding Go" by Jon Marcum, which was itself adapted from
+  "Go by Example" by Mark McGranaghan
+  (https://github.com/mmcgrana/gobyexample).
+  License: http://creativecommons.org/licenses/by/3.0/
 
-| Content | License |
-|---------|---------|
-| Lesson source code and Markdown files (derived from Go by Example by Mark McGranaghan) | CC BY 3.0 — http://creativecommons.org/licenses/by/3.0/ |
-| Original project structure, root files, NOTICE, CLAUDE.md, README.md | CC0 1.0 Universal — see LICENSE |
+- **CC0 1.0** — original contributions by Jon Marcum (project structure,
+  README, comparative-study additions, and any lessons not derived from
+  Go by Example). See LICENSE.
 
-Every lesson `.md` file must include the full attribution footer (see template below).
+Attribution for derived content is provided centrally in README.md and
+NOTICE — do **not** add a per-file attribution footer to lesson `.md` files.
 
-## Directory Structure
+## Upstream Reference
+
+BasicsOfCodingGo is included as a git submodule at `upstream/basicsofcodinggo`.
+Read each lesson from `upstream/basicsofcodinggo/##_topic-name/` as the
+source of truth for program logic and expected output.
+
+## Project Structure
 
 ```
-BasicsOfCodingJavaScript/
-├── .gitignore
-├── LICENSE
-├── NOTICE
-├── README.md
-├── CLAUDE.md
-├── 01_hello-world/
-│   ├── hello-world.js
-│   └── hello-world.md
-├── 02_values/
-│   ├── values.js
-│   └── values.md
-├── 03_variables/
-│   ├── variables.js
-│   └── variables.md
-├── 04_constants/
-│   ├── constants.js
-│   └── constants.md
-├── 05_for/
-│   ├── for.js
-│   └── for.md
-├── 06_if-else/
-│   ├── if-else.js
-│   └── if-else.md
-├── 07_switch/
-│   ├── switch.js
-│   └── switch.md
-├── 08_arrays/
-│   ├── arrays.js
-│   └── arrays.md
-├── 09_slices/
-│   ├── slices.js
-│   └── slices.md
-├── 10_maps/
-│   ├── maps.js
-│   └── maps.md
-├── 11_range/
-│   ├── range.js
-│   └── range.md
-├── 12_functions/
-│   ├── functions.js
-│   └── functions.md
-├── 13_multiple-return-values/
-│   ├── multiple-return-values.js
-│   └── multiple-return-values.md
-├── 14_variadic-functions/
-│   ├── variadic-functions.js
-│   └── variadic-functions.md
-├── 15_closures/
-│   ├── closures.js
-│   └── closures.md
-├── 16_recursion/
-│   ├── recursion.js
-│   └── recursion.md
-├── 17_pointers/
-│   ├── pointers.js
-│   └── pointers.md
-├── 18_structs/
-│   ├── structs.js
-│   └── structs.md
-├── 19_methods/
-│   ├── methods.js
-│   └── methods.md
-├── 20_interfaces/
-│   ├── interfaces.js
-│   └── interfaces.md
-├── 21_errors/
-│   ├── errors.js
-│   └── errors.md
-├── 40_sorting/
-│   ├── sorting.js
-│   └── sorting.md
-├── 41_sorting-by-functions/
-│   ├── sorting-by-functions.js
-│   └── sorting-by-functions.md
-├── 42_panic/
-│   ├── panic.js
-│   └── panic.md
-├── 43_defer/
-│   ├── defer.js
-│   └── defer.md
-├── 44_collection-functions/
-│   ├── collection-functions.js
-│   └── collection-functions.md
-├── 45_string-functions/
-│   ├── string-functions.js
-│   └── string-functions.md
-├── 46_string-formatting/
-│   ├── string-formatting.js
-│   └── string-formatting.md
-├── 47_regular-expressions/
-│   ├── regular-expressions.js
-│   └── regular-expressions.md
-├── 48_json/
-│   ├── json.js
-│   └── json.md
-├── 49_xml/
-│   ├── xml.js
-│   └── xml.md
-├── 50_time/
-│   ├── time.js
-│   └── time.md
-├── 51_epoch/
-│   ├── epoch.js
-│   └── epoch.md
-├── 52_time-formatting-parsing/
-│   ├── time-formatting-parsing.js
-│   └── time-formatting-parsing.md
-├── 53_random-numbers/
-│   ├── random-numbers.js
-│   └── random-numbers.md
-├── 54_number-parsing/
-│   ├── number-parsing.js
-│   └── number-parsing.md
-├── 55_url-parsing/
-│   ├── url-parsing.js
-│   └── url-parsing.md
-├── 56_sha1-hashes/
-│   ├── sha1-hashes.js
-│   └── sha1-hashes.md
-├── 57_base64-encoding/
-│   ├── base64-encoding.js
-│   └── base64-encoding.md
-├── 58_reading-files/
-│   ├── reading-files.js
-│   └── reading-files.md
-├── 59_writing-files/
-│   ├── writing-files.js
-│   └── writing-files.md
-├── 60_line-filters/
-│   ├── line-filters.js
-│   └── line-filters.md
-├── 61_file-paths/
-│   ├── file-paths.js
-│   └── file-paths.md
-├── 62_directories/
-│   ├── directories.js
-│   └── directories.md
-├── 63_temporary-files-and-directories/
-│   ├── temporary-files-and-directories.js
-│   └── temporary-files-and-directories.md
-├── 64_command-line-arguments/
-│   ├── command-line-arguments.js
-│   └── command-line-arguments.md
-├── 65_command-line-flags/
-│   ├── command-line-flags.js
-│   └── command-line-flags.md
-├── 66_command-line-subcommands/
-│   ├── command-line-subcommands.js
-│   └── command-line-subcommands.md
-└── 67_environment-variables/
-    ├── environment-variables.js
-    └── environment-variables.md
+BasicsOfCodingNode/
+├── CLAUDE.md          — this file; canonical project context for Claude sessions
+├── LICENSE            — CC0 (applies to Jon Marcum's original contributions)
+├── NOTICE             — attribution notice for CC BY 3.0 derived content
+├── README.md          — project overview, attribution section, license table
+├── upstream/
+│   └── basicsofcodinggo/  — git submodule: BasicsOfCodingGo reference
+├── package.json       — devDependencies: ts-node, typescript, @types/node
+├── tsconfig.json      — TypeScript compiler config (outDir: dist, strict: true)
+└── ##_topic-name/
+    ├── topic-name.js  — JavaScript source (run with node)
+    ├── topic-name.ts  — TypeScript source (run with npx ts-node)
+    └── topic-name.md  — lesson explanation (run commands + expected output)
 ```
+
+Lessons are numbered with a two-digit prefix (e.g., `01_hello-world`),
+mirroring BasicsOfCodingGo exactly: same lesson numbers, same folder names.
 
 ## .gitignore
 
-```
+The project `.gitignore` covers:
+
+```gitignore
 # Temporary files created by lesson examples (lessons 58-60)
 tmp/
 
@@ -205,70 +80,79 @@ coverage/
 Thumbs.db
 ```
 
-**Entry explanations:**
+- `dist/` is the TypeScript compiler output directory (`tsc` writes here so it
+  does not overwrite the hand-crafted `.js` lesson files). Use `ts-node` to
+  run `.ts` files directly — there is no need to run `tsc`.
+- `tmp/` is the working directory expected by lessons 58 (reading-files),
+  59 (writing-files), and 60 (line-filters). It must exist at runtime but
+  should not be committed. Lesson 59 creates it automatically.
+- `node_modules/` is created by `npm install` at the repo root (ts-node,
+  typescript, @types/node) and by `npm install xml2js` in lesson 49 (xml).
 
-| Entry | Purpose | Produced by |
-|-------|---------|-------------|
-| `tmp/` | Runtime directory for file I/O lesson examples | Lessons 58 (reading-files), 59 (writing-files), 60 (line-filters) |
-| `node_modules/` | npm package installation directory | Lesson 49 (xml) requires `npm install xml2js` |
-| `npm-debug.log*` / `yarn-*.log*` | Package manager error logs | Any npm/yarn operation |
-| `package-lock.json` / `yarn.lock` | Dependency lockfiles (not tracked in lesson repos) | npm/yarn install |
-| `coverage/` / `.nyc_output/` | Test coverage reports | Test runners (nyc, jest, etc.) |
-| `.env` / `.env.local` | Environment variable files | Should never be committed |
-| `.DS_Store` / `Thumbs.db` | OS metadata files | macOS / Windows Explorer |
+## Language Notes for Future Claude Sessions
 
-## Per-File Attribution Footer Template
+- **Runtime:** Node.js only. No Deno, no browser APIs.
+  - JavaScript: `node filename.js`
+  - TypeScript: `npx ts-node filename.ts` (requires `npm install` at repo root first)
+- **Module system:** CommonJS (`require`) in both `.js` and `.ts` files.
+  No `import`/`export` unless unavoidable.
+- **TypeScript setup:** `package.json` at repo root has ts-node, typescript, and
+  @types/node as devDependencies. Run `npm install` once. `tsconfig.json` uses
+  `strict: true`, `module: commonjs`, `outDir: dist`.
+- **TypeScript conventions used:**
+  - Function parameter and return types always explicit
+  - `interface` for object shapes (structs, result objects)
+  - Tuple return types `[T, U]` for multiple-return-value lessons
+  - `Array<() => void>` for typed function arrays (lesson 43)
+  - `unknown` for truly-unknown-type parameters (lesson 07 `whatAmI`)
+  - `implements InterfaceName` on classes (lesson 20)
+  - `require('xml2js') as any` for the untyped xml2js package (lesson 49)
+- **No external packages** except lesson 49 (xml), which requires
+  `npm install xml2js` run inside `49_xml/`.
+- **JavaScript has no pointers** (lesson 17) — implement with object references;
+  note the difference from Go's pointer semantics.
+- **JavaScript has no defer** (lesson 43) — simulated with a `deferred` array
+  and LIFO execution; note that `try/finally` is the real-world idiom.
+- **JavaScript has no panic/recover** (lesson 42) — implement with `throw`/`try/catch`.
+- **JavaScript has no explicit interfaces** (lesson 20) — implement with duck typing.
+- **JavaScript has no structs** (lesson 18) — implement with classes or plain objects.
+- **Go's `fmt.Println` vs `console.log`:** Go uses space-separated `%v` format for
+  structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Node.js uses its own inspection
+  format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Always show actual Node.js output
+  in the `.md` file.
+- **Map iteration order:** Go maps are non-deterministic. JavaScript plain objects
+  and `Map` preserve insertion order. No variability note needed for JS maps.
+- **Variable output lessons** (description at top notes this): 07 (switch — time),
+  42 (panic — stack trace), 50 (time), 51 (epoch), 52 (time-formatting-parsing),
+  53 (random-numbers), 63 (temporary-files-and-directories),
+  67 (environment-variables).
+- **Lessons with setup steps:** 49 (xml — `npm install xml2js`),
+  58 (reading-files — run 59 first), 60 (line-filters — requires stdin piping).
+- The root `LICENSE` file is CC0 but does **not** cover the derived content.
+  Always refer to NOTICE and README for the full picture.
 
-Every lesson `.md` file must end with this exact footer (after the closing `___`):
+## .md File Format
+
+Each lesson `.md` follows the Go/V reference format:
 
 ```
-###### This work and the accompanying code was originally from Mark McGranaghan at [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample) and licensed under a Creative Commons Attribution 3.0 Unported License [http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/). It has been used to provide an example base for multiple languages to provide a basis of comparitive programming language study for syntax, language simplicity, number of lines of code and operations required to perform the same task, as well as compile and run speed combined.
-```
-
-## Canonical .md Format Rules
-
-Every lesson `.md` file must follow these rules exactly:
-
-1. The file begins with `___` (three underscores). No blank line before it.
-2. Separators are always `___` (exactly three underscores), never more or fewer.
-3. The run instruction heading is `#### To run the program...` (h4). Use `___` above and below it.
-4. The run command heading is `##### Run Command:` (h5), followed by a blank line, then the command as an inline backtick span on its own line.
-5. The results heading is `##### Results:` (h5), followed by a blank line, then one inline backtick span per output line — never a fenced code block.
-6. If the program produces multiple run commands (e.g., setup then run), add a separate `##### Run Command:` section for each, separated by `___`.
-7. If output varies per run (timestamps, random numbers, temp file names), use a `##### Results:` heading with representative example output, then add an `#### Note:` section immediately after the closing `___`.
-8. There must be a blank line between the final `___` and the `######` attribution footer.
-9. The attribution footer is always the full `######` text shown above — do not shorten or omit it.
-10. Do not add any content above the opening `___` (no h1 title, no front matter).
-
-**Minimal template:**
-
-```
-___
-#### To run the program, make sure you are in the program's folder, then use the Run Command below.
+#### Optional description (language note or setup instruction).
 ___
 ##### Run Command:
 
 `$ node filename.js`
 
+`$ npx ts-node filename.ts`
+
 ##### Results:
 
 `output line 1`
 `output line 2`
-___
-
-###### This work and the accompanying code was originally from Mark McGranaghan at [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample) and licensed under a Creative Commons Attribution 3.0 Unported License [http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/). It has been used to provide an example base for multiple languages to provide a basis of comparitive programming language study for syntax, language simplicity, number of lines of code and operations required to perform the same task, as well as compile and run speed combined.
 ```
 
-## Notes for Future Claude Sessions
-
-- **Runtime:** Node.js only. No Deno, no browser APIs. Run with `node filename.js`.
-- **Module system:** CommonJS (`require`). No `import`/`export` unless unavoidable.
-- **No external packages** except lesson 49 (xml), which requires `npm install xml2js`.
-- **JavaScript has no pointers** (lesson 17) — implement with object references and note the difference.
-- **JavaScript has no defer** (lesson 43) — implement with `try/finally` and note the difference.
-- **JavaScript has no panic/recover** (lesson 42) — implement with `throw`/`try/catch`.
-- **JavaScript has no explicit interfaces** (lesson 20) — implement with duck typing.
-- **JavaScript has no structs** (lesson 18) — implement with classes or plain objects.
-- **Go's `fmt.Println` format vs JavaScript's `console.log`:** Go uses space-separated %v format for structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Node.js uses its own inspection format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Show the actual JavaScript output in the `.md` file.
-- **Map iteration order:** Go maps are non-deterministic. JavaScript plain objects and Map preserve insertion order. No variability note needed for JS maps.
-- **Variable output lessons** that need `#### Note:` sections: 07 (switch — time-dependent), 50 (time), 51 (epoch), 52 (time-formatting-parsing), 53 (random-numbers), 63 (temporary-files-and-directories).
+Rules:
+- The description line (if present) is a single `####` sentence before the first `___`.
+- No opening `___` before a description; `___` separates description from run command.
+- If there is no description, the file starts directly with `##### Run Command:`.
+- Multiple run command sections are separated by a blank line, `___`, and a blank line.
+- No per-file attribution footer — attribution is fully satisfied by README and NOTICE.

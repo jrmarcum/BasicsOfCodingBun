@@ -1,9 +1,10 @@
-___
-#### To run the program, make sure you are in the program's folder, then use the Run Command below.
+#### On Windows, Node.js `path.join` uses backslashes (`\`) as the separator, matching the OS convention. On Linux/macOS, forward slashes (`/`) are used — matching Go's output. Additionally, `path.isAbsolute("/dir/file")` returns `false` on Windows (an absolute path requires a drive letter such as `C:\dir\file`), while it returns `true` on Linux/macOS and in Go.
 ___
 ##### Run Command:
 
 `$ node file-paths.js`
+
+`$ npx ts-node file-paths.ts`
 
 ##### Results:
 
@@ -18,9 +19,3 @@ ___
 `config`
 `t\file`
 `..\c\t\file`
-___
-
-#### Note: On Windows, Node.js `path.join` uses backslashes (`\`) as the separator, matching the OS convention. On Linux/macOS, forward slashes (`/`) are used — matching Go's output. Additionally, `path.isAbsolute("/dir/file")` returns `false` on Windows (an absolute path requires a drive letter such as `C:\dir\file`), while it returns `true` on Linux/macOS and in Go.
-___
-
-###### This work and the accompanying code was originally from Mark McGranaghan at [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample) and licensed under a Creative Commons Attribution 3.0 Unported License [http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/). It has been used to provide an example base for multiple languages to provide a basis of comparitive programming language study for syntax, language simplicity, number of lines of code and operations required to perform the same task, as well as compile and run speed combined.

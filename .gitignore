@@ -1,6 +1,9 @@
 # Temporary files created by lesson examples (lessons 58-60)
 tmp/
 
+# TypeScript compiled output (use ts-node to run .ts files directly)
+dist/
+
 # Node.js toolchain artifacts
 node_modules/
 npm-debug.log*
