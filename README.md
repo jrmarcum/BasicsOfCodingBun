@@ -1,4 +1,4 @@
-# Basics of Coding JavaScript
+# Basics of Coding Node JavaScript/Typescript
 
 A JavaScript port of the [Go by Example](https://github.com/mmcgrana/gobyexample) curriculum, used as part of a multi-language comparative study examining syntax, language simplicity, lines of code, and runtime performance for the same set of example programs.
 
