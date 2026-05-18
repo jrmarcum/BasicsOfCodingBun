@@ -2,6 +2,8 @@
 ## Preface
 What this text is and what it is not: This text is intended to introduce the reader to the basics of the JavaScript programming language (running on Bun) in the sense that they will be able to write minimal types of programs and run the code. It is not intended to go into advanced topics like asynchronous programming, frameworks, bundlers, or advanced software engineering principles.
 
+This project is part of a multi-language comparative study that implements the same set of example programs across several runtimes and languages — including Node, Bun, V, and Rust — enabling direct side-by-side comparison of syntax, language simplicity, lines of code required, and runtime performance.
+
 The programs are intended to be run in the terminal as that is common to most operating systems. Linux and Mac come preinstalled with a terminal. Windows may or may not have it pre-installed. "Windows Terminal" can be installed from the Microsoft store. Just do a search for it and install it.
 ## Installation and Setup of Bun
 To set up Bun, navigate to the [Bun](https://bun.sh/) website and follow the installation instructions for your operating system. If the runtime has been installed properly you will be able to type the following command in the terminal command line and receive the response shown:
@@ -119,8 +121,12 @@ Both produce identical output.
 
 ## Attribution
 
-This project is adapted in part from **[Basics of Coding Go](https://github.com/jrmarcum/BasicsOfCodingGo)**
-by [Jon Marcum](https://github.com/jrmarcum), which was itself adapted from
+This project is a direct adaptation of **[Basics of Coding Node](https://github.com/jrmarcum/BasicsOfCodingNode)**
+by [Jon Marcum](https://github.com/jrmarcum) for the Bun runtime. The `.js` and `.ts`
+lesson source files are identical to the Node version — Bun is a drop-in replacement.
+
+BasicsOfCodingNode was itself adapted in part from **[Basics of Coding Go](https://github.com/jrmarcum/BasicsOfCodingGo)**
+by [Jon Marcum](https://github.com/jrmarcum), which was adapted from
 **[Go by Example](https://github.com/mmcgrana/gobyexample)**
 by [Mark McGranaghan](https://github.com/mmcgrana), both licensed under the
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).

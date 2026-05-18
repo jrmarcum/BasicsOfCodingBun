@@ -4,8 +4,13 @@
 
 Multi-language comparative study of programming syntax, language simplicity,
 lines of code required, and runtime performance. Bun is one of several
-languages implemented against the same set of example programs, enabling
-direct side-by-side comparison.
+runtimes/languages implemented against the same set of example programs
+(alongside Node, V, Rust, and others), enabling direct side-by-side comparison.
+
+BasicsOfCodingBun is a direct adaptation of BasicsOfCodingNode for the Bun
+runtime. All `.js` and `.ts` lesson source files are identical to the Node
+version — Bun is a drop-in replacement, so the only differences are run
+commands, toolchain configuration, and lockfile naming.
 
 ## Licensing Summary
 
