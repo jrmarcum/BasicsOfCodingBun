@@ -17,9 +17,9 @@ ___
 ##### Results:
 
 `hello`
-`js`
+`ts`
 `5 bytes: hello`
-`2 bytes @ 6: js`
+`2 bytes @ 6: ts`
 `1 bytes @ 8: `
 ``
 `5 bytes: hello`

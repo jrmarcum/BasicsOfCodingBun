@@ -1,4 +1,4 @@
-﻿#### JavaScript plain objects and the `for...of` loop over `Object.entries()` and `Object.keys()` preserve insertion order, making map iteration deterministic — unlike Go's non-deterministic map range. The final loop iterates over the string `'js'`, printing the Unicode code point of each character (`j`=106, `s`=115).
+﻿#### JavaScript plain objects and the `for...of` loop over `Object.entries()` and `Object.keys()` preserve insertion order, making map iteration deterministic — unlike Go's non-deterministic map range. The final loop iterates over the string `'ts'`, printing the Unicode code point of each character (`t`=116, `s`=115).
 ___
 ##### Run Command:
 
@@ -14,5 +14,5 @@ ___
 `b -> banana`
 `key: a`
 `key: b`
-`0 106`
+`0 116`
 `1 115`

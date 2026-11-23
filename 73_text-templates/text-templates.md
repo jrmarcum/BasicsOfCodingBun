@@ -10,9 +10,9 @@ ___
 
 `Value: some text`
 `Value: 5`
-`Value: [JavaScript Rust C++ C#]`
+`Value: [TypeScript Rust C++ C#]`
 `Name: Jane Doe`
 `Name: Mickey Mouse`
 `yes`
 `no`
-`Range: JavaScript Rust C++ C# `
+`Range: TypeScript Rust C++ C# `

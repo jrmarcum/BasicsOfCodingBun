@@ -20,6 +20,6 @@ for (const k of Object.keys(kvs)) {
     console.log("key:", k);
 }
 
-for (const [i, c] of [...'js'].entries()) {
+for (const [i, c] of [...'ts'].entries()) {
     console.log(i, c.codePointAt(0));
 }

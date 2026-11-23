@@ -3,8 +3,8 @@ import path from 'node:path';
 
 fs.mkdirSync("tmp", { recursive: true });
 
-fs.writeFileSync(path.join("tmp", "dat1"), "hello\njs\n");
-fs.writeFileSync(path.join("tmp", "dat"), "hello\njs\n");
+fs.writeFileSync(path.join("tmp", "dat1"), "hello\nts\n");
+fs.writeFileSync(path.join("tmp", "dat"), "hello\nts\n");
 
 const fd: number = fs.openSync(path.join("tmp", "dat2"), "w");
 
