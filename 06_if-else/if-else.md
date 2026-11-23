@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun if-else.js`
-
 `$ bun if-else.ts`
 
 ##### Results:

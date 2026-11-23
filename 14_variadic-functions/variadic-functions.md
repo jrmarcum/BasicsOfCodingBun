@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun variadic-functions.js`
-
 `$ bun variadic-functions.ts`
 
 ##### Results:

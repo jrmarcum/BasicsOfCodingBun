@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun variables.js`
-
 `$ bun variables.ts`
 
 ##### Results:

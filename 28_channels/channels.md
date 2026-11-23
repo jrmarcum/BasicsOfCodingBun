@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun channels.js`
-
 `$ bun channels.ts`
 
 ##### Results:

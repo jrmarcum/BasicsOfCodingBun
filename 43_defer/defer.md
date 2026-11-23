@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun defer.js`
-
 `$ bun defer.ts`
 
 ##### Results:

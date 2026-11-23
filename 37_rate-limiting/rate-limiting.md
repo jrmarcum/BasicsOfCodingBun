@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun rate-limiting.js`
-
 `$ bun rate-limiting.ts`
 
 ##### Results:

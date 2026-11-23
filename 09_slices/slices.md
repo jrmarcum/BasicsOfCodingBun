@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun slices.js`
-
 `$ bun slices.ts`
 
 ##### Results:

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun timeouts.js`
-
 `$ bun timeouts.ts`
 
 ##### Results:

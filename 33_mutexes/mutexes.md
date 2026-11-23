@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun mutexes.js`
-
 `$ bun mutexes.ts`
 
 ##### Results:

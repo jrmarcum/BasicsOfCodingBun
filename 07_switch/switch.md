@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun switch.js`
-
 `$ bun switch.ts`
 
 ##### Results:

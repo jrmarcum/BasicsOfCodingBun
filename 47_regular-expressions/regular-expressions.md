@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun regular-expressions.js`
-
 `$ bun regular-expressions.ts`
 
 ##### Results:

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun atomic-counters.js`
-
 `$ bun atomic-counters.ts`
 
 ##### Results:

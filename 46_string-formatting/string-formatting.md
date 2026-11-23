@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun string-formatting.js`
-
 `$ bun string-formatting.ts`
 
 ##### Results:

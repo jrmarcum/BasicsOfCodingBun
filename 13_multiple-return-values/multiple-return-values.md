@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun multiple-return-values.js`
-
 `$ bun multiple-return-values.ts`
 
 ##### Results:

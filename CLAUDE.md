@@ -8,9 +8,11 @@ runtimes/languages implemented against the same set of example programs
 (alongside Node, V, Rust, and others), enabling direct side-by-side comparison.
 
 BasicsOfCodingBun is a direct adaptation of BasicsOfCodingNode for the Bun
-runtime. All `.js` and `.ts` lesson source files are identical to the Node
-version — Bun is a drop-in replacement, so the only differences are run
-commands, toolchain configuration, and lockfile naming.
+runtime. Lesson source files are derived from the Node version — Bun is a
+drop-in replacement, so the main differences are run commands, toolchain
+configuration, and lockfile naming. Lessons 01–50 are TypeScript only
+(`.ts`); lessons 51–78 have both `.js` and `.ts` files. Example data uses
+TypeScript wording (e.g., `"type" + "script"`) where Go used "go".
 
 ## Licensing Summary
 
@@ -47,8 +49,8 @@ BasicsOfCodingBun/
 ├── upstream/
 │   └── basicsofcodinggo/  — git submodule: BasicsOfCodingGo reference
 └── ##_topic-name/
-    ├── topic-name.js  — JavaScript source (run with bun)
     ├── topic-name.ts  — TypeScript source (run with bun)
+    ├── topic-name.js  — JavaScript source (lessons 51–78 only)
     └── topic-name.md  — lesson explanation (run commands + expected output)
 ```
 
@@ -89,10 +91,10 @@ Thumbs.db
 ## Language Notes for Future Claude Sessions
 
 - **Runtime:** Bun only. No Node.js, npm, or ts-node required.
-  - JavaScript: `bun filename.js`
   - TypeScript: `bun filename.ts` (Bun runs TypeScript natively; no tsconfig needed)
+  - JavaScript (lessons 51–78): `bun filename.js`
   - Testing (lesson 68): `bun test ./filename.js` and `bun test ./filename.ts`
-- **Module system:** ESM (`import`/`export`) in both `.js` and `.ts` files.
+- **Module system:** ESM (`import`/`export`) in all `.js` and `.ts` files.
   Built-in modules use the `node:` prefix (e.g., `import fs from 'node:fs'`,
   `import { createHash } from 'node:crypto'`).
 - **No root package.json or tsconfig.json** — Bun runs TypeScript natively
@@ -127,8 +129,9 @@ Thumbs.db
   a simple async lock class for structural equivalence.
 - **Go's `fmt.Println` vs `console.log`:** Go uses space-separated `%v` format for
   structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Bun/JS uses its own inspection
-  format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Always show actual Bun output
-  in the `.md` file.
+  format (e.g., `[ 1, 2, 3 ]`, `[ "a", "b" ]`; Bun 1.4+ uses double quotes and
+  wraps longer objects/nested arrays across lines). Always show actual Bun
+  output in the `.md` file.
 - **Map iteration order:** Go maps are non-deterministic. JavaScript plain objects
   and `Map` preserve insertion order. No variability note needed for JS maps.
 - **Go's `testing` package** (lesson 68) maps to Bun's native `bun:test` runner;
@@ -157,7 +160,7 @@ Each lesson `.md` follows the Go/V reference format:
 ___
 ##### Run Command:
 
-`$ bun filename.js`
+`$ bun filename.js`   (lessons 51–78 only)
 
 `$ bun filename.ts`
 
@@ -173,6 +176,7 @@ Rules:
 - No opening `___` before a description; `___` separates description from run command.
 - If there is no description, the file starts directly with `##### Run Command:`.
 - Multiple run command sections are separated by a blank line, `___`, and a blank line.
+- Lessons 01–50 list only the `bun filename.ts` command (no `.js` file exists).
 - Lesson 68 uses `bun test ./filename.js` and `bun test ./filename.ts` instead of
   the standard `bun filename.js` / `bun filename.ts`.
 - No per-file attribution footer — attribution is fully satisfied by README and NOTICE.

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun json.js`
-
 `$ bun json.ts`
 
 ##### Results:

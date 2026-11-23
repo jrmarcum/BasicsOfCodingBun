@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun select.js`
-
 `$ bun select.ts`
 
 ##### Results:

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun constants.js`
-
 `$ bun constants.ts`
 
 ##### Results:

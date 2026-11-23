@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun sorting-by-functions.js`
-
 `$ bun sorting-by-functions.ts`
 
 ##### Results:

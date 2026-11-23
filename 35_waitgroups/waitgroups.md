@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun waitgroups.js`
-
 `$ bun waitgroups.ts`
 
 ##### Results:

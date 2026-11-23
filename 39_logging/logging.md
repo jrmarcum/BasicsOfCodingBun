@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun logging.js`
-
 `$ bun logging.ts`
 
 ##### Results:

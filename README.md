@@ -16,16 +16,7 @@ $ bun --version
 
 ## How to Run Examples
 
-Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) source file, plus a `.md` file showing run commands and expected output.
-
-### JavaScript
-
-No setup required. Navigate into the lesson folder and run with `bun`:
-
-```text
-$ cd 01_hello-world
-$ bun hello-world.js
-```
+Each lesson folder contains a `.ts` (TypeScript) source file and a `.md` file showing run commands and expected output. Lessons 51–78 also include a `.js` (JavaScript) version of the same program.
 
 ### TypeScript
 
@@ -34,6 +25,15 @@ Bun runs TypeScript natively — no toolchain setup needed. Navigate into the le
 ```text
 $ cd 01_hello-world
 $ bun hello-world.ts
+```
+
+### JavaScript (lessons 51–78)
+
+No setup required. Navigate into the lesson folder and run with `bun`:
+
+```text
+$ cd 51_epoch
+$ bun epoch.js
 ```
 
 Both produce identical output.
@@ -124,8 +124,9 @@ Both produce identical output.
 ## Attribution
 
 This project is a direct adaptation of **[Basics of Coding Node](https://github.com/jrmarcum/BasicsOfCodingNode)**
-by [Jon Marcum](https://github.com/jrmarcum) for the Bun runtime. The `.js` and `.ts`
-lesson source files are identical to the Node version — Bun is a drop-in replacement.
+by [Jon Marcum](https://github.com/jrmarcum) for the Bun runtime. The lesson source files are derived from the Node version —
+Bun is a drop-in replacement. Lessons 01–50 are TypeScript only; lessons 51–78
+include both `.js` and `.ts` files.
 
 BasicsOfCodingNode was itself adapted in part from **[Basics of Coding Go](https://github.com/jrmarcum/BasicsOfCodingGo)**
 by [Jon Marcum](https://github.com/jrmarcum), which was adapted from

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun tickers.js`
-
 `$ bun tickers.ts`
 
 ##### Results:

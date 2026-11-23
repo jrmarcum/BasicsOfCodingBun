@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun time.js`
-
 `$ bun time.ts`
 
 ##### Results:

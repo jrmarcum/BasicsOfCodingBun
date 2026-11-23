@@ -1,8 +1,6 @@
-#### Go generics with type parameters map directly to TypeScript generics; the `.js` file uses plain JavaScript with dynamic typing and no generic syntax.
+#### Go generics with type parameters map directly to TypeScript generics, with type parameters declared in angle brackets (e.g., `function slicesIndex<T>(s: T[], v: T)`).
 ___
 ##### Run Command:
-
-`$ bun generics.js`
 
 `$ bun generics.ts`
 

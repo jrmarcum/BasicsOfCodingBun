@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun pointers.js`
-
 `$ bun pointers.ts`
 
 ##### Results:

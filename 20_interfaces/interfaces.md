@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun interfaces.js`
-
 `$ bun interfaces.ts`
 
 ##### Results:

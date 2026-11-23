@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun goroutines.js`
-
 `$ bun goroutines.ts`
 
 ##### Results:

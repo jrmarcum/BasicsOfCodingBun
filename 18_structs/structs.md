@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun structs.js`
-
 `$ bun structs.ts`
 
 ##### Results:

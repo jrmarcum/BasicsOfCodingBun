@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun struct-embedding.js`
-
 `$ bun struct-embedding.ts`
 
 ##### Results:

@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun closures.js`
-
 `$ bun closures.ts`
 
 ##### Results:

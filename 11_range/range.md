@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun range.js`
-
 `$ bun range.ts`
 
 ##### Results:

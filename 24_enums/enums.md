@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun enums.js`
-
 `$ bun enums.ts`
 
 ##### Results:

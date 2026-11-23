@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun worker-pools.js`
-
 `$ bun worker-pools.ts`
 
 ##### Results:

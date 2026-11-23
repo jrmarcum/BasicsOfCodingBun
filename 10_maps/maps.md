@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun maps.js`
-
 `$ bun maps.ts`
 
 ##### Results:

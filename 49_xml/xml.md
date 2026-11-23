@@ -8,8 +8,6 @@ ___
 
 ##### Run Command:
 
-`$ bun xml.js`
-
 `$ bun xml.ts`
 
 ##### Results:

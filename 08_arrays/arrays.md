@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun arrays.js`
-
 `$ bun arrays.ts`
 
 ##### Results:

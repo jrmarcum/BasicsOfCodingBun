@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun collection-functions.js`
-
 `$ bun collection-functions.ts`
 
 ##### Results:

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun sorting.js`
-
 `$ bun sorting.ts`
 
 ##### Results:

@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun strings-and-runes.js`
-
 `$ bun strings-and-runes.ts`
 
 ##### Results:

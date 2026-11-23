@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun methods.js`
-
 `$ bun methods.ts`
 
 ##### Results:

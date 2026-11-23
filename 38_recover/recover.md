@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun recover.js`
-
 `$ bun recover.ts`
 
 ##### Results:

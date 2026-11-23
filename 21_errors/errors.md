@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun errors.js`
-
 `$ bun errors.ts`
 
 ##### Results:

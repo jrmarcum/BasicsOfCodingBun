@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun custom-errors.js`
-
 `$ bun custom-errors.ts`
 
 ##### Results:

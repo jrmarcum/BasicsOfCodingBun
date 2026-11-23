@@ -1,7 +1,5 @@
 ﻿##### Run Command:
 
-`$ bun string-functions.js`
-
 `$ bun string-functions.ts`
 
 ##### Results:

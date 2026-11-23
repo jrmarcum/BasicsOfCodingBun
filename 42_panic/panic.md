@@ -2,8 +2,6 @@
 ___
 ##### Run Command:
 
-`$ bun panic.js`
-
 `$ bun panic.ts`
 
 ##### Results:
