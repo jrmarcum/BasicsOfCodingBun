@@ -1,4 +1,4 @@
-﻿#### JavaScript has no built-in subcommand routing. This lesson implements it manually by reading `process.argv[2]` as the subcommand name and parsing the remaining arguments with a custom `parseFlags` function. The `tail` array uses Node.js's inspection format (`[ 'a1', 'a2' ]`) whereas Go prints `[a1 a2]`.
+﻿#### JavaScript has no built-in subcommand routing. This lesson implements it manually by reading `process.argv[2]` as the subcommand name and parsing the remaining arguments with a custom `parseFlags` function. The `tail` array uses Bun's inspection format (`[ "a1", "a2" ]`) whereas Go prints `[a1 a2]`.
 ___
 ##### Run Command:
 
@@ -11,7 +11,7 @@ ___
 `subcommand 'foo'`
 `  enable: true`
 `  name: joe`
-`  tail: [ 'a1', 'a2' ]`
+`  tail: [ "a1", "a2" ]`
 ___
 
 ##### Run Command:
@@ -24,4 +24,4 @@ ___
 
 `subcommand 'bar'`
 `  level: 8`
-`  tail: [ 'a1' ]`
+`  tail: [ "a1" ]`

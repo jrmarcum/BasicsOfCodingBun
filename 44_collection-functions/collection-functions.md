@@ -12,5 +12,5 @@ ___
 `false`
 `true`
 `false`
-`[ 'peach', 'pear', 'plum' ]`
-`[ 'PEACH', 'APPLE', 'PEAR', 'PLUM' ]`
+`[ "peach", "pear", "plum" ]`
+`[ "PEACH", "APPLE", "PEAR", "PLUM" ]`

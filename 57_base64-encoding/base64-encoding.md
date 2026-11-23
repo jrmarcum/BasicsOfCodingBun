@@ -1,4 +1,4 @@
-﻿#### Node.js provides base64 encoding via `Buffer`. Standard encoding uses `+` and `/` with `=` padding; URL-safe encoding replaces `+` with `-` and `/` with `_`. The `base64url` encoding is supported natively in Node.js v16+.
+﻿#### Bun provides base64 encoding via `Buffer`. Standard encoding uses `+` and `/` with `=` padding; URL-safe encoding replaces `+` with `-` and `/` with `_`. The `base64url` encoding is supported natively in Bun.
 ___
 ##### Run Command:
 

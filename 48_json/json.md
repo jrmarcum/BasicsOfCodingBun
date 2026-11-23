@@ -1,4 +1,4 @@
-﻿#### JavaScript has native JSON support via `JSON.stringify` and `JSON.parse`. When a parsed object is printed with `console.log`, Node.js shows its inspection format (`{ num: 6.13, strs: [ 'a', 'b' ] }`) rather than JSON format. JSON key ordering follows object insertion order in JavaScript; Go's `encoding/json` sorts map keys alphabetically.
+﻿#### JavaScript has native JSON support via `JSON.stringify` and `JSON.parse`. When a parsed object is printed with `console.log`, Bun shows its inspection format (`{ num: 6.13, strs: [ "a", "b" ] }`, wrapped across lines) rather than JSON format. JSON key ordering follows object insertion order in JavaScript; Go's `encoding/json` sorts map keys alphabetically.
 ___
 ##### Run Command:
 
@@ -16,7 +16,10 @@ ___
 `{"apple":5,"lettuce":7}`
 `{"Page":1,"Fruits":["apple","peach","pear"]}`
 `{"page":1,"fruits":["apple","peach","pear"]}`
-`{ num: 6.13, strs: [ 'a', 'b' ] }`
+`{`
+`  num: 6.13,`
+`  strs: [ "a", "b" ],`
+`}`
 `6.13`
 `a`
 `{1 [apple peach]}`

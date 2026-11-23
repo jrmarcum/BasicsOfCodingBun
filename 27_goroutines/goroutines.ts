@@ -6,7 +6,7 @@ function f(from: string): void {
 
 f("direct");
 
-setTimeout(() => f("goroutine"), 0);
+setTimeout(() => f("async task"), 0);
 
 setTimeout(() => console.log("going"), 0);
 

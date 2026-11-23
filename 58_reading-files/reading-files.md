@@ -1,4 +1,4 @@
-﻿#### Run the writing-files lesson first to create the `tmp/dat` file that this program reads. Node.js uses the `fs` module with synchronous APIs (`readFileSync`, `openSync`, `readSync`) as the equivalent of Go's `os.ReadFile`, `os.Open`, and `io.Reader`. Seeking to a byte offset is done by passing the position as the last argument to `fs.readSync`.
+﻿#### Run the writing-files lesson first to create the `tmp/dat` file that this program reads. Bun uses the `fs` module with synchronous APIs (`readFileSync`, `openSync`, `readSync`) as the equivalent of Go's `os.ReadFile`, `os.Open`, and `io.Reader`. Seeking to a byte offset is done by passing the position as the last argument to `fs.readSync`.
 ___
 ##### Run Command:
 
@@ -17,8 +17,9 @@ ___
 ##### Results:
 
 `hello`
-`go`
+`js`
 `5 bytes: hello`
-`2 bytes @ 6: go`
+`2 bytes @ 6: js`
 `1 bytes @ 8: `
+``
 `5 bytes: hello`

@@ -14,3 +14,6 @@ node_modules/
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# rumdl Markdown linter cache
+.rumdl_cache/

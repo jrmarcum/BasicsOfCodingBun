@@ -11,8 +11,8 @@ ___
 `direct : 0`
 `direct : 1`
 `direct : 2`
-`goroutine : 0`
-`goroutine : 1`
-`goroutine : 2`
+`async task : 0`
+`async task : 1`
+`async task : 2`
 `going`
 `done`

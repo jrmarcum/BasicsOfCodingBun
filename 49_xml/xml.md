@@ -1,4 +1,4 @@
-﻿#### Node.js has no built-in XML library. This lesson uses the `xml2js` npm package for parsing. XML generation is done with string building. Run `npm install xml2js` once before running the program. Unlike Go's `encoding/xml`, JavaScript has no native struct-to-XML mapping; XML handling requires a third-party package.
+﻿#### Bun has no built-in XML library. This lesson uses the `xml2js` package for parsing. XML generation is done with string building. Run `bun install xml2js` once before running the program. Unlike Go's `encoding/xml`, JavaScript has no native struct-to-XML mapping; XML handling requires a third-party package.
 ___
 ##### Run Command:
 

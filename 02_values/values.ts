@@ -1,4 +1,4 @@
-console.log("go" + "lang");
+console.log("java" + "script");
 
 console.log("1+1 =", 1 + 1);
 console.log("7.0/3.0 =", 7.0 / 3.0);

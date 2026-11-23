@@ -11,4 +11,6 @@ ___
 `initial: 1`
 `zeroval: 1`
 `zeroref: 0`
-`reference: { val: 0 }`
+`reference: {`
+`  val: 0,`
+`}`

@@ -31,7 +31,7 @@ function render(tmpl: string, data: TemplateData): string {
 const t1: string = "Value: {{.}}\n";
 process.stdout.write(render(t1, "some text"));
 process.stdout.write(render(t1, 5));
-process.stdout.write(render(t1, ["Go", "Rust", "C++", "C#"]));
+process.stdout.write(render(t1, ["JavaScript", "Rust", "C++", "C#"]));
 
 const t2: string = "Name: {{.Name}}\n";
 process.stdout.write(render(t2, { Name: "Jane Doe" }));
@@ -42,4 +42,4 @@ process.stdout.write(render(t3, "not empty"));
 process.stdout.write(render(t3, ""));
 
 const t4: string = "Range: {{range .Items}}{{.}} {{end}}\n";
-process.stdout.write(render(t4, { Items: ["Go", "Rust", "C++", "C#"] }));
+process.stdout.write(render(t4, { Items: ["JavaScript", "Rust", "C++", "C#"] }));

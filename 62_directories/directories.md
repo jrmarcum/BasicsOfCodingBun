@@ -1,4 +1,4 @@
-﻿#### On Linux/macOS, path separators will be `/` instead of `\`. The program creates a `subdir` directory structure, lists its contents, then removes it using `try/finally` to ensure cleanup — mirroring Go's `defer os.RemoveAll("subdir")`. Node.js `fs.readdirSync` with `withFileTypes: true` returns `Dirent` objects, equivalent to Go's `os.ReadDir` returning `DirEntry` values.
+﻿#### On Linux/macOS, path separators will be `/` instead of `\`. The program creates a `subdir` directory structure, lists its contents, then removes it using `try/finally` to ensure cleanup — mirroring Go's `defer os.RemoveAll("subdir")`. Bun `fs.readdirSync` with `withFileTypes: true` returns `Dirent` objects, equivalent to Go's `os.ReadDir` returning `DirEntry` values.
 ___
 ##### Run Command:
 

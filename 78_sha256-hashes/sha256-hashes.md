@@ -1,4 +1,4 @@
-#### Go's `crypto/sha256` maps to Node.js `crypto.createHash('sha256')`; the same input always produces the same hash.
+#### Go's `crypto/sha256` maps to Bun `crypto.createHash('sha256')`; the same input always produces the same hash.
 ___
 ##### Run Command:
 

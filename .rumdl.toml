@@ -1,0 +1,18 @@
+# rumdl configuration — https://github.com/rvben/rumdl
+#
+# The lesson .md files follow a fixed house style (shared with the other
+# languages in this comparative study), so rules that conflict with that
+# style are disabled rather than reformatting all 78 lessons.
+
+[global]
+exclude = ["upstream/**"]  # reference copy of the Go lessons, not ours to lint
+disable = [
+    "MD013",  # line length — lesson prose is written as single-line paragraphs
+    "MD014",  # "$ " prompt on commands — every Run Command uses the $ prefix
+    "MD022",  # blank lines around headings — lessons put ___ rules tight against headings
+    "MD024",  # duplicate headings — multi-step lessons repeat "Run Command:" / "Results:"
+    "MD026",  # trailing punctuation — "Run Command:", "Results:" and sentence-style #### notes
+    "MD038",  # spaces in code spans — Results lines show program output verbatim, incl. leading/trailing spaces
+    "MD041",  # first line H1 — lessons open with an intro paragraph
+    "MD065",  # blank line after horizontal rule — ___ separators sit directly above headings
+]

@@ -1,4 +1,4 @@
-﻿#### On Windows, Node.js `path.join` uses backslashes (`\`) as the separator, matching the OS convention. On Linux/macOS, forward slashes (`/`) are used — matching Go's output. Additionally, `path.isAbsolute("/dir/file")` returns `false` on Windows (an absolute path requires a drive letter such as `C:\dir\file`), while it returns `true` on Linux/macOS and in Go.
+﻿#### On Windows, Bun `path.join` uses backslashes (`\`) as the separator, matching the OS convention. On Linux/macOS, forward slashes (`/`) are used — matching Go's output. `path.isAbsolute("/dir/file")` returns `true` on every platform, matching Go (on Windows a leading separator is treated as rooted on the current drive).
 ___
 ##### Run Command:
 
@@ -14,7 +14,7 @@ ___
 `Dir(p): dir1\dir2`
 `Base(p): filename`
 `false`
-`false`
+`true`
 `.json`
 `config`
 `t\file`

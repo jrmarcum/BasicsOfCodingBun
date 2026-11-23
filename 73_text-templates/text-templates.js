@@ -26,7 +26,7 @@ function render(tmpl, data) {
 const t1 = "Value: {{.}}\n";
 process.stdout.write(render(t1, "some text"));
 process.stdout.write(render(t1, 5));
-process.stdout.write(render(t1, ["Go", "Rust", "C++", "C#"]));
+process.stdout.write(render(t1, ["JavaScript", "Rust", "C++", "C#"]));
 
 const t2 = "Name: {{.Name}}\n";
 process.stdout.write(render(t2, { Name: "Jane Doe" }));
@@ -37,4 +37,4 @@ process.stdout.write(render(t3, "not empty"));
 process.stdout.write(render(t3, ""));
 
 const t4 = "Range: {{range .Items}}{{.}} {{end}}\n";
-process.stdout.write(render(t4, { Items: ["Go", "Rust", "C++", "C#"] }));
+process.stdout.write(render(t4, { Items: ["JavaScript", "Rust", "C++", "C#"] }));

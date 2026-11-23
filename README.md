@@ -7,11 +7,13 @@ This project is part of a multi-language comparative study that implements the s
 The programs are intended to be run in the terminal as that is common to most operating systems. Linux and Mac come preinstalled with a terminal. Windows may or may not have it pre-installed. "Windows Terminal" can be installed from the Microsoft store. Just do a search for it and install it.
 ## Installation and Setup of Bun
 To set up Bun, navigate to the [Bun](https://bun.sh/) website and follow the installation instructions for your operating system. If the runtime has been installed properly you will be able to type the following command in the terminal command line and receive the response shown:
-```
+
+```text
 $ bun --version
 1.x.x
 (Note: the version shown here varies with your installed version)
 ```
+
 ## How to Run Examples
 
 Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) source file, plus a `.md` file showing run commands and expected output.
@@ -20,7 +22,7 @@ Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) s
 
 No setup required. Navigate into the lesson folder and run with `bun`:
 
-```
+```text
 $ cd 01_hello-world
 $ bun hello-world.js
 ```
@@ -29,7 +31,7 @@ $ bun hello-world.js
 
 Bun runs TypeScript natively — no toolchain setup needed. Navigate into the lesson folder and run with `bun`:
 
-```
+```text
 $ cd 01_hello-world
 $ bun hello-world.ts
 ```

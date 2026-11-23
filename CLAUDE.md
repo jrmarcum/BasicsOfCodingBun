@@ -19,8 +19,8 @@ This project contains two tiers of content with different licenses:
 - **CC BY 3.0** — lesson files and code examples adapted from
   "Basics of Coding Go" by Jon Marcum, which was itself adapted from
   "Go by Example" by Mark McGranaghan
-  (https://github.com/mmcgrana/gobyexample).
-  License: http://creativecommons.org/licenses/by/3.0/
+  (<https://github.com/mmcgrana/gobyexample>).
+  License: <http://creativecommons.org/licenses/by/3.0/>
 
 - **CC0 1.0** — original contributions by Jon Marcum (project structure,
   README, comparative-study additions, and any lessons not derived from
@@ -37,12 +37,13 @@ source of truth for program logic and expected output.
 
 ## Project Structure
 
-```
+```text
 BasicsOfCodingBun/
 ├── CLAUDE.md          — this file; canonical project context for Claude sessions
 ├── LICENSE            — CC0 (applies to Jon Marcum's original contributions)
 ├── NOTICE             — attribution notice for CC BY 3.0 derived content
 ├── README.md          — project overview, attribution section, license table
+├── .rumdl.toml        — Markdown lint config (rumdl)
 ├── upstream/
 │   └── basicsofcodinggo/  — git submodule: BasicsOfCodingGo reference
 └── ##_topic-name/
@@ -151,7 +152,7 @@ Thumbs.db
 
 Each lesson `.md` follows the Go/V reference format:
 
-```
+```text
 #### Optional description (language note or setup instruction).
 ___
 ##### Run Command:
@@ -167,6 +168,7 @@ ___
 ```
 
 Rules:
+
 - The description line (if present) is a single `####` sentence before the first `___`.
 - No opening `___` before a description; `___` separates description from run command.
 - If there is no description, the file starts directly with `##### Run Command:`.
@@ -174,3 +176,11 @@ Rules:
 - Lesson 68 uses `bun test ./filename.js` and `bun test ./filename.ts` instead of
   the standard `bun filename.js` / `bun filename.ts`.
 - No per-file attribution footer — attribution is fully satisfied by README and NOTICE.
+
+## Markdown Linting
+
+Markdown is linted with rumdl (VS Code extension `rvben.rumdl`), configured by
+`.rumdl.toml`. The lesson `.md` house style (`___` separators,
+`##### Run Command:` / `##### Results:` headings, verbatim output in code spans)
+is intentional; disable a conflicting rule in `.rumdl.toml` rather than
+reformatting lessons. `upstream/` is excluded from linting.

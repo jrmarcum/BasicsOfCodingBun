@@ -6,5 +6,5 @@
 
 ##### Results:
 
-`[ 'kiwi', 'peach', 'apple' ]`
+`[ "kiwi", "peach", "apple" ]`
 `[{Eve 2} {Alice 25} {Bob 35}]`
